@@ -1,0 +1,91 @@
+.service-area {
+  padding: 100px 0;
+  background-color: #333;
+}
+
+.single-service {
+  background-color: #888;
+  padding: 35px;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  bottom: 0;
+}
+
+.single-service:hover {
+  background-color: rgb(28, 185, 28);
+  cursor: pointer;
+  bottom: 5px;
+}
+
+.single-service h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.single-service p {
+  color: #fefefe;
+}
+
+.service-one {
+  position: relative;
+  z-index: 1;
+}
+.service-one::before {
+  position: absolute;
+  content: "";
+  height: 120px;
+  width: 120px;
+  background-color: green;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+  transition: 0.3s;
+}
+.service-one:hover::before {
+  height: 100%;
+  width: 100%;
+}
+.service-one::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: inherit;
+}
+
+.service-three {
+  position: relative;
+  z-index: 1;
+}
+.service-three::before {
+  position: absolute;
+  content: "";
+  height: 120px;
+  width: 120px;
+  background-color: green;
+  right: -15px;
+  bottom: -15px;
+  z-index: -1;
+  transition: 0.3s;
+}
+.service-three::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: inherit;
+}
+
+.service-three:hover::before {
+  height: 100%;
+  width: 100%;
+}
